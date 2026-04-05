@@ -27,8 +27,8 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 s consists only of printable ASCII characters.
 
 ## Solution
-class Solution
-{
+```java
+class Solution {
     public boolean isPalindrome(String s)
     {
         String str = s.trim();
@@ -55,6 +55,7 @@ class Solution
         return true;
     }
 }
+```
 
 ## Time Complexity : O(n)
 n = length of the string
