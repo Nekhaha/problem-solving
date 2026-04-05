@@ -11,17 +11,17 @@ Given an integer array nums, answer multiple queries of the following type:
 ## I/O Format
 **Input Format:**
 
-Integer n - size of array
+--> Integer n - size of array
 
-Array elements
+--> Array elements
 
-Number of queries q
+--> Number of queries q
 
-q lines each containing 2 space-seperated integers left and right representing the query range.
+--> q lines each containing 2 space-seperated integers left and right representing the query range.
 
 **Output Format:**
 
-For each query, print the sum of elements, from index left to index right in a new line.
+--> For each query, print the sum of elements, from index left to index right in a new line.
 
 ## I/O Sample
 **Sample Input:**
@@ -98,11 +98,16 @@ public class Main
 
 ## Time Complexity : O(n + q)
 Building the prefix array → loops through n elements once → O(n)
+
 Answering each query → each query is answered in O(1) because you're just doing a subtraction prefix[right] - prefix[left-1]
+
 For q queries → O(q) total
+
 Combined → O(n + q)
 
 ## Space Complexity : O(n)
 The prefix[] array stores n elements → O(n)
+
 No other major data structures used
+
 Input array nums[] also takes O(n) but that's required to store input
