@@ -1,4 +1,5 @@
-# Leetcode 3512 - Minimum Operations to Make Array Sum Divisible by K
+# Leetcode 3512
+# Minimum Operations to Make Array Sum Divisible by K
 
 ## Problem Statement
 You are given an integer array nums and an integer k. You can perform the following operation any number of times:
